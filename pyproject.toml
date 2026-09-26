@@ -1,0 +1,27 @@
+[project]
+name = "sg-qwen-tool-router"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Regan Tan", email = "regantanyk@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=5.0.1",
+    "pydantic>=2.13.5",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+sg-qwen-tool-router = "sg_qwen_tool_router:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.9",
+]

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets
+.env
+.env.*
+
+# Model / training artifacts
+outputs/
+checkpoints/
+*.safetensors
+*.gguf
+*.bin
+
+# Hugging Face
+.cache/
+
+# Frontend
+node_modules/
+dist/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
